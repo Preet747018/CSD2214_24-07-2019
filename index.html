@@ -5,16 +5,22 @@
 </head>
 <body>
     <h1> Welcome to Ajex </h1>
+    <div id="output">
+    </div>
     <script type="text/javascript">
-    var obj1 =  {
+    var myfriends =  {
        "friends":[
-           {"first" :"Mike", "last":"Smith"},
+           {"first" :"Satnam", "last":"Dhammu"},
            {"first" :"Sia", "last":"Sharma"},
            {"first" :"Kiran", "last":"Dhesi"},
            {"first" :"Amitdeep","last":"Brar"},
        ]
 };
-    console.log(obj1);
-        </script>
+var users = myfriends.friends;
+for(i=0; i<myfriends.friends.length; i++){
+   html+= ' ' +(myfriends.friends[1].first);
+};
+document.getElementById("output").innerHTML = html;
+   </script>
 </body>
 </html>
